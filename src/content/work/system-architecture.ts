@@ -83,7 +83,7 @@ export const content: ContentItem = {
     // THE IMAGE BLOCK: Clean, framed visual content
     { 
       type: 'image', 
-      src: '/assets/portrait.jpg', 
+      src: '/cp099/assets/portrait.jpg', 
       alt: 'System Asset Check', 
       caption: 'Visual asset integration check using the standard portrait asset.' 
     },
