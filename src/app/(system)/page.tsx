@@ -9,7 +9,7 @@ export default function HomePage() {
         <div className="lg:col-span-5 lg:sticky lg:top-24">
           <div className="relative aspect-video lg:aspect-[3/4] w-full overflow-hidden rounded-xl md:rounded-2xl border border-white/10 bg-white/[0.02]">
             <Image 
-              src="/assets/portrait.jpg" 
+              src="/cp099/assets/portrait.jpg"
               alt="Chirag P Patil" 
               fill
               priority
