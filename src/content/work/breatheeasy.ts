@@ -176,6 +176,25 @@ export const content: ContentItem = {
       content: 'And most importantly — UI matters. Even the most accurate system fails if people cannot understand or use it.'
     },
 
+    // PROJECT ACCESS
+    {
+      type: 'heading',
+      level: 2,
+      content: 'Project Access'
+    },
+    {
+      type: 'paragraph',
+      content: `
+      <a href="https://github.com/cp099/BreatheEasy.git" target="_blank" rel="noopener noreferrer">
+        View Source Code on GitHub
+      </a>
+      <br/>
+      <a href="https://youtu.be/HQEPkb_qyzM" target="_blank" rel="noopener noreferrer">
+        Watch Project Walkthrough
+      </a>
+      `
+    },
+
     // CONTRIBUTORS
     {
       type: 'heading',
