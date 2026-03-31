@@ -48,23 +48,41 @@ export const List = ({ block }: { block: ListBlock }) => {
   );
 };
 
-export const ImageComponent = ({ block }: { block: ImageBlock }) => (
-  <figure className="my-8 group">
-    <div className="relative aspect-video w-full overflow-hidden rounded-lg border border-white/10 bg-white/[0.02]">
-      <Image 
-        src={block.src} 
-        alt={block.alt} 
-        fill 
-        className="object-cover transition-transform duration-700 group-hover:scale-105"
-      />
-    </div>
-    {block.caption && (
-      <figcaption className="mt-3 text-[10px] font-mono uppercase tracking-widest text-white/30 px-2">
-        {block.caption}
-      </figcaption>
-    )}
-  </figure>
-);
+export const ImageComponent = ({ block }: { block: ImageBlock }) => {
+  const isLogo = block.src.includes('logo');
+
+  return (
+    <figure className="my-8 group">
+      
+      {isLogo ? (
+        <div className="flex justify-center">
+          <Image
+            src={block.src}
+            alt={block.alt}
+            width={220}
+            height={220}
+            className="opacity-90 object-contain"
+          />
+        </div>
+      ) : (
+        <div className="relative aspect-video w-full overflow-hidden rounded-lg border border-white/10 bg-white/[0.02]">
+          <Image 
+            src={block.src} 
+            alt={block.alt} 
+            fill 
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+        </div>
+      )}
+
+      {block.caption && (
+        <figcaption className="mt-3 text-[10px] font-mono uppercase tracking-widest text-white/30 px-2 text-center">
+          {block.caption}
+        </figcaption>
+      )}
+    </figure>
+  );
+};
 
 export const CodeComponent = ({ block }: { block: CodeBlock }) => (
   <div className="my-6 rounded-lg border border-white/10 bg-black/40 overflow-hidden">

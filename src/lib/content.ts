@@ -1,10 +1,12 @@
 import { ContentItem } from '@/types/system';
 import { content as systemArchitecture } from '@/content/work/system-architecture';
 import { content as learningNextjs } from '@/content/journey/learning-nextjs';
+import { content as breatheeasy } from '@/content/work/breatheeasy';
 
 const ALL_CONTENT: ContentItem[] = [
   systemArchitecture,
   learningNextjs,
+  breatheeasy
 ];
 
 
