@@ -2,12 +2,15 @@ import { ContentItem } from '@/types/system';
 import { content as systemArchitecture } from '@/content/work/system-architecture';
 import { content as learningNextjs } from '@/content/journey/learning-nextjs';
 import { content as breatheeasy } from '@/content/work/breatheeasy';
+import { content as sherlock } from '@/content/work/sherlock-python';
 
 const ALL_CONTENT: ContentItem[] = [
   systemArchitecture,
   learningNextjs,
-  breatheeasy
+  breatheeasy,
+  sherlock
 ];
+
 
 
 export function getAllContent(): ContentItem[] {
