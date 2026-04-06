@@ -3,12 +3,14 @@ import { content as systemArchitecture } from '@/content/work/system-architectur
 import { content as learningNextjs } from '@/content/journey/learning-nextjs';
 import { content as breatheeasy } from '@/content/work/breatheeasy';
 import { content as sherlock } from '@/content/work/sherlock-python';
+import { content as ylacEqualityClub } from '@/content/work/ylac-equality-club';
 
 const ALL_CONTENT: ContentItem[] = [
   systemArchitecture,
   learningNextjs,
   breatheeasy,
-  sherlock
+  sherlock,
+  ylacEqualityClub
 ];
 
 
