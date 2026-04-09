@@ -11,8 +11,59 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Chirag P Patil | Personal OS",
-  description: "A modular system for documenting projects, research, and growth.",
+  metadataBase: new URL("https://cp099.github.io/cp099"),
+  title: {
+    default: "Chirag P Patil | Personal OS",
+    template: "%s | Chirag P Patil",
+  },
+  description: "Architecting modular environments and documenting the intersection of technology, finance, and experience.",
+  alternates: {
+    canonical: "./",
+  },
+
+  // --- SEARCH ENGINE VERIFICATION ---
+  verification: {
+    google: "5pfJNfYFvO2fXBv-gHzz-O131Y6ZuFqwiKsgDKMEI8s",
+    other: {
+      "msvalidate.01": "6BDFEA2F7F196AEC823FDEB5C843C0D2",
+    },
+  },
+
+  openGraph: {
+    title: "Chirag P Patil | Personal Operating System",
+    description: "A modular personal operating system documenting systems engineering, finance, and professional growth.",
+    url: "https://cp099.github.io/cp099",
+    siteName: "CHIRAG.OS",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/cp099/assets/og-image.png", 
+        width: 1200,
+        height: 630,
+        alt: "CHIRAG.OS — Personal Operating System",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Chirag P Patil | Personal OS",
+    description: "Systems Builder • Exploring Tech & Finance",
+    images: ["/cp099/assets/og-image.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({

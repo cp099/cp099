@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getAllContent, getContentBySlug } from '@/lib/content';
 import BlockRenderer from '@/components/blocks/BlockRenderer';
@@ -15,6 +16,30 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+/**
+ * Dynamic SEO Metadata for Item Pages
+ */
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const item = getContentBySlug(slug);
+
+  if (!item) return { title: 'Not Found' };
+
+  return {
+    title: item.title,
+    description: item.summary,
+    alternates: {
+      canonical: `https://cp099.github.io/cp099/item/${slug}`,
+    },
+    openGraph: {
+      title: item.title,
+      description: item.summary,
+      url: `https://cp099.github.io/cp099/item/${slug}`,
+      type: 'article',
+    },
+  };
+}
+
 export default async function ItemDetailPage({ params }: Props) {
   const { slug } = await params;
   const item = getContentBySlug(slug);
@@ -29,7 +54,7 @@ export default async function ItemDetailPage({ params }: Props) {
         <div className="flex items-center gap-2 text-cyan-bright font-mono text-[9px] mb-3 uppercase tracking-[0.4em] font-bold">
           <span className="text-white/30">{item.category}</span>
           <span className="text-white/10">/</span>
-          <span className="text-cyan/80 underline underline-offset-2 decoration-cyan/20">
+          <span className="text-cyan underline underline-offset-2 decoration-cyan/20">
             {item.type}
           </span>
           <span className="text-white/10">/</span>
@@ -60,7 +85,7 @@ export default async function ItemDetailPage({ params }: Props) {
           <div className="md:text-right">
             <p className="mb-2 text-white/40">Citation Permalink</p>
             <p className="truncate overflow-hidden">
-              https://chiragppatil.github.io/item/{item.slug}
+              https://cp099.github.io/cp099/item/{item.slug}
             </p>
           </div>
         </div>
