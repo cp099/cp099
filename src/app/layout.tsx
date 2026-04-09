@@ -21,7 +21,6 @@ export const metadata: Metadata = {
     canonical: "./",
   },
 
-  // --- SEARCH ENGINE VERIFICATION ---
   verification: {
     google: "5pfJNfYFvO2fXBv-gHzz-O131Y6ZuFqwiKsgDKMEI8s",
     other: {
@@ -71,8 +70,35 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // --- STRUCTURED DATA (JSON-LD) ---
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Chirag P Patil",
+    "url": "https://cp099.github.io/cp099",
+    "image": "https://cp099.github.io/cp099/assets/portrait.jpg",
+    "jobTitle": "Systems Builder & Student",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bangalore",
+      "addressRegion": "Karnataka",
+      "addressCountry": "India"
+    },
+    "sameAs": [
+      "https://github.com/cp099",
+      "https://www.linkedin.com/in/chiragppatil/"
+    ],
+    "description": "I explore how systems work across technology and finance and build modular environments."
+  };
+
   return (
     <html lang="en" className={inter.variable}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="antialiased flex flex-col min-h-screen relative suppressHydrationWarning">
         <div className="bg-canvas">
           <div className="absolute -left-[10%] top-[-10%] w-[50%] h-[70%] rounded-full bg-cyan/5 blur-[120px] animate-float" />
