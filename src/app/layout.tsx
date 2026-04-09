@@ -70,7 +70,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // --- STRUCTURED DATA (JSON-LD) ---
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -93,13 +92,14 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={inter.variable}>
-      <head>
+      <body className="antialiased flex flex-col min-h-screen relative suppressHydrationWarning">
+        {/* Structured Data for Search Engines */}
         <script
           type="application/ld+json"
+          id="json-ld-profile"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-      </head>
-      <body className="antialiased flex flex-col min-h-screen relative suppressHydrationWarning">
+
         <div className="bg-canvas">
           <div className="absolute -left-[10%] top-[-10%] w-[50%] h-[70%] rounded-full bg-cyan/5 blur-[120px] animate-float" />
           <div className="absolute -right-[10%] bottom-[-10%] w-[50%] h-[70%] rounded-full bg-blue-600/5 blur-[120px] animate-float [animation-delay:2s]" />
