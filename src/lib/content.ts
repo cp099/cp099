@@ -5,6 +5,7 @@ import { content as breatheeasy } from '@/content/work/breatheeasy';
 import { content as sherlock } from '@/content/work/sherlock-python';
 import { content as ylacEqualityClub } from '@/content/work/ylac-equality-club';
 import { content as cauveryViceCaptain } from '@/content/work/cauvery-vice-captain';
+import { content as pledgeCouncilFounder } from '@/content/work/pledge-council-founder';
 
 const ALL_CONTENT: ContentItem[] = [
   systemArchitecture,
@@ -13,6 +14,7 @@ const ALL_CONTENT: ContentItem[] = [
   sherlock,
   ylacEqualityClub,
   cauveryViceCaptain,
+  pledgeCouncilFounder
 ];
 
 
