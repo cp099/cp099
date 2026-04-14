@@ -39,6 +39,7 @@ export interface ImageBlock extends BaseBlock {
   src: string;
   alt: string;
   caption?: string;
+  layout?: 'portrait' | 'landscape';
 }
 
 export interface HighlightBlock extends BaseBlock {

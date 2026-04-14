@@ -50,6 +50,7 @@ export const List = ({ block }: { block: ListBlock }) => {
 
 export const ImageComponent = ({ block }: { block: ImageBlock }) => {
   const isLogo = block.src.includes('logo');
+  const layout = block.layout || 'portrait'; 
 
   return (
     <figure className="my-8 group">
@@ -65,12 +66,17 @@ export const ImageComponent = ({ block }: { block: ImageBlock }) => {
           />
         </div>
       ) : (
-        <div className="relative aspect-video w-full overflow-hidden rounded-lg border border-white/10 bg-white/[0.02]">
+        <div className="relative w-full overflow-hidden rounded-lg border border-white/10 bg-white/[0.02]">
           <Image 
-            src={block.src} 
-            alt={block.alt} 
-            fill 
-            className="object-cover transition-transform duration-700 group-hover:scale-105"
+            src={block.src}
+            alt={block.alt}
+            width={1200}
+            height={800}
+            className={
+              layout === 'landscape'
+                ? 'w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105'
+                : 'w-full max-w-2xl mx-auto h-auto object-contain transition-transform duration-700 group-hover:scale-105'
+            }
           />
         </div>
       )}
