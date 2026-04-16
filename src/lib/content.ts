@@ -7,6 +7,7 @@ import { content as ylacEqualityClub } from '@/content/work/ylac-equality-club';
 import { content as cauveryViceCaptain } from '@/content/work/cauvery-vice-captain';
 import { content as pledgeCouncilFounder } from '@/content/work/pledge-council-founder';
 import { content as cauveryHouseCaptain } from '@/content/work/cauvery-house-captain';
+import { content as atlStudentMentor } from '@/content/work/atl-student-mentor';
 
 const ALL_CONTENT: ContentItem[] = [
   systemArchitecture,
@@ -17,6 +18,7 @@ const ALL_CONTENT: ContentItem[] = [
   cauveryViceCaptain,
   pledgeCouncilFounder,
   cauveryHouseCaptain,
+  atlStudentMentor,
 ];
 
 
