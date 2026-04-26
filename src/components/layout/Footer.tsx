@@ -57,7 +57,7 @@ export default function Footer() {
             <div className="flex items-center justify-around md:justify-center gap-4 px-4 md:px-5 py-2 rounded-md bg-white/[0.03] border border-white/5 w-full md:w-auto">
               <div className="flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-cyan shadow-[0_0_8px_rgba(100,255,218,0.5)]" />
-                <span className="text-white/90 font-bold whitespace-nowrap text-[9px] md:text-[10px]">BANGALORE, IN</span>
+                <span className="text-white/90 font-bold whitespace-nowrap text-[9px] md:text-[10px]">KASARAGUPPE, SORAB, IN</span>
               </div>
               <span className="text-white/10">|</span>
               <span className="text-white font-bold tabular-nums min-w-[70px] text-center" suppressHydrationWarning>
