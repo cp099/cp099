@@ -16,7 +16,7 @@ export const content: ContentItem = {
     // HERO IMAGE
     {
       type: 'image',
-      src: '/assets/Work/cauvery-captain/1.jpg',
+      src: '/assets/Work/cauvery-captain/1.webp',
       alt: 'Cauvery House Captain',
       caption: 'Cauvery House Captain — Leadership Position (2024–25)',
       layout: 'portrait'
@@ -80,7 +80,7 @@ export const content: ContentItem = {
     // IMAGE - ACTION
     {
       type: 'image',
-      src: '/assets/Work/cauvery-captain/2.jpg',
+      src: '/assets/Work/cauvery-captain/2.webp',
       alt: 'March Leadership',
       caption: 'Leading from the front — execution, discipline, and coordination in motion',
       layout: 'landscape'
@@ -109,7 +109,7 @@ export const content: ContentItem = {
     // IMAGE - AUTHORITY
     {
       type: 'image',
-      src: '/assets/Work/cauvery-captain/3.jpg',
+      src: '/assets/Work/cauvery-captain/3.webp',
       alt: 'Captain Presence',
       caption: 'Leadership under visibility — representing the house beyond execution',
       layout: 'portrait'

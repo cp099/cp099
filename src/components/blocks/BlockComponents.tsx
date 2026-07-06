@@ -83,7 +83,7 @@ export const ImageComponent = ({ block }: { block: ImageBlock }) => {
       )}
 
       {block.caption && (
-        <figcaption className="mt-3 text-[10px] font-mono uppercase tracking-widest text-white/30 px-2 text-center">
+        <figcaption className="mt-3 text-[10px] font-mono uppercase tracking-widest text-white/70 px-2 text-center">
           {block.caption}
         </figcaption>
       )}
@@ -94,7 +94,7 @@ export const ImageComponent = ({ block }: { block: ImageBlock }) => {
 export const CodeComponent = ({ block }: { block: CodeBlock }) => (
   <div className="my-6 rounded-lg border border-white/10 bg-black/40 overflow-hidden">
     <div className="flex items-center justify-between px-4 py-2 border-b border-white/5 bg-white/[0.02]">
-      <span className="text-[10px] font-mono text-cyan/60 uppercase tracking-widest">{block.language}</span>
+      <span className="text-[10px] font-mono text-cyan/80 uppercase tracking-widest">{block.language}</span>
       <div className="flex gap-1.5">
         <div className="w-2 h-2 rounded-full bg-white/5" />
         <div className="w-2 h-2 rounded-full bg-white/5" />
@@ -110,7 +110,7 @@ export const DataComponent = ({ block }: { block: DataBlock }) => (
   <div className="my-8 grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 border border-white/10 rounded-lg overflow-hidden">
     {block.metrics.map((metric, i) => (
       <div key={i} className="bg-navy p-4 flex flex-col gap-1">
-        <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-white/30">{metric.label}</span>
+        <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-white/70">{metric.label}</span>
         <span className="text-base font-bold text-cyan-bright tracking-tight">{metric.value}</span>
       </div>
     ))}

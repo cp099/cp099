@@ -42,7 +42,7 @@ export default function HomePage() {
             }`}
           >
             <Image 
-              src="/assets/portrait.jpg"
+              src="/assets/portrait.webp"
               alt="Chirag P Patil" 
               fill
               priority
@@ -75,7 +75,7 @@ export default function HomePage() {
               {humanMode ? 'Curious Observer' : 'Systems Builder'} • <span className="text-white/30">Tech & Finance</span>
             </h1>
             
-            <p className="text-[9px] md:text-[10px] font-mono uppercase tracking-[0.2em] md:tracking-[0.3em] text-white/60 mb-8 md:mb-10">
+            <p className="text-[9px] md:text-[10px] font-mono uppercase tracking-[0.2em] md:tracking-[0.3em] text-white/80 mb-8 md:mb-10">
               Built in Bangalore. Shaped by systems, people, and curiosity.
             </p>
 
@@ -91,22 +91,22 @@ export default function HomePage() {
             {/* Module 1: System Specs */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 border border-white/10 rounded-lg overflow-hidden">
               <div className="bg-navy p-4 flex flex-col gap-1 transition-all duration-500">
-                <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-white/40">Entity_ID</span>
+                <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-white/70">Entity_ID</span>
                 <span className="text-xs md:text-sm font-bold text-white tracking-tight">CHIRAG_P_PATIL</span>
               </div>
               <div className="bg-navy p-4 flex flex-col gap-1 transition-all duration-500">
-                <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-white/40">Class</span>
+                <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-white/70">Class</span>
                 <span className={`text-xs md:text-sm font-bold tracking-tight ${humanMode ? 'text-blue-400' : 'text-cyan-bright'}`}>
                   {humanMode ? 'STUDENT_VIBE' : 'SYS_ARCHITECT'}
                 </span>
               </div>
               <div className="bg-navy p-4 flex flex-col gap-1 transition-all duration-500">
-                <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-white/40">Location</span>
+                <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-white/70">Location</span>
                 {/* UPDATED: Changed to standard Airport code BLR */}
                 <span className="text-xs md:text-sm font-bold text-white tracking-tight">BLR_IN</span>
               </div>
               <div className="bg-navy p-4 flex flex-col gap-1 transition-all duration-500">
-                <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-white/40">
+                <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-white/70">
                   {humanMode ? 'Fav_Reset' : 'Uptime'}
                 </span>
                 <span className="text-xs md:text-sm font-bold text-white tracking-tight tabular-nums">
@@ -117,9 +117,9 @@ export default function HomePage() {
 
             {/* Module 2: Memory Map (Unified Bar) */}
             <div>
-              <h3 className="text-[10px] font-mono uppercase tracking-[0.3em] text-white/40 mb-4 flex items-center gap-4">
+              <h2 className="text-[10px] font-mono uppercase tracking-[0.3em] text-white/70 mb-4 flex items-center gap-4">
                 Memory Allocation <span className="h-px bg-white/10 flex-grow" />
-              </h3>
+              </h2>
               
               <div className="w-full bg-white/5 h-2 md:h-2.5 rounded-full overflow-hidden flex border border-white/10 mb-4 shadow-inner">
                 <div className="bg-cyan h-full transition-all duration-1000 relative group" style={{ width: '50%' }}>
@@ -136,15 +136,15 @@ export default function HomePage() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 mt-2">
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-cyan shadow-[0_0_5px_rgba(100,255,218,0.5)]"></span>
-                  <span className="text-[9px] font-mono text-white/70 tracking-widest uppercase">Sys_Arch <span className="text-white/40 ml-1.5">50%</span></span>
+                  <span className="text-[9px] font-mono text-white/70 tracking-widest uppercase">Sys_Arch <span className="text-white/70 ml-1.5">50%</span></span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40"></span>
-                  <span className="text-[9px] font-mono text-white/70 tracking-widest uppercase">Fin_Flows <span className="text-white/40 ml-1.5">30%</span></span>
+                  <span className="text-[9px] font-mono text-white/70 tracking-widest uppercase">Fin_Flows <span className="text-white/70 ml-1.5">30%</span></span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-blue-500/60"></span>
-                  <span className="text-[9px] font-mono text-white/70 tracking-widest uppercase">Human_Gear <span className="text-white/40 ml-1.5">20%</span></span>
+                  <span className="text-[9px] font-mono text-white/70 tracking-widest uppercase">Human_Gear <span className="text-white/70 ml-1.5">20%</span></span>
                 </div>
               </div>
             </div>
@@ -153,14 +153,14 @@ export default function HomePage() {
             <div className="p-5 border border-white/5 bg-white/[0.01] rounded-xl font-mono text-xs text-slate space-y-3 shadow-lg">
               <div className="flex items-start gap-3">
                 <span className="text-cyan mt-0.5 animate-pulse">❯</span>
-                <p><span className="text-white/40">SYS.LOG:</span> Integrating BreatheEasy ML predictions with live CPCB feeds.</p>
+                <p><span className="text-white/70">SYS.LOG:</span> Integrating BreatheEasy ML predictions with live CPCB feeds.</p>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-cyan mt-0.5">❯</span>
-                <p><span className="text-white/40">SYS.LOG:</span> Analyzing enterprise accounting workflows.</p>
+                <p><span className="text-white/70">SYS.LOG:</span> Analyzing enterprise accounting workflows.</p>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-white/40 mt-0.5">❯</span>
+                <span className="text-white/70 mt-0.5">❯</span>
                 <p className="italic">{"\"Growth becomes clearer when it’s documented. This space reflects what I’m learning, building, and becoming.\""}</p>
               </div>
             </div>
@@ -171,7 +171,7 @@ export default function HomePage() {
 
       {/* --- GATEWAY SECTION --- */}
       <section>
-        <h2 className="text-[9px] font-mono uppercase tracking-[0.5em] text-white/40 mb-8 px-2 md:px-0 flex items-center gap-4">
+        <h2 className="text-[9px] font-mono uppercase tracking-[0.5em] text-white/70 mb-8 px-2 md:px-0 flex items-center gap-4">
           System Directory <span className="h-px bg-white/10 flex-grow" />
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">

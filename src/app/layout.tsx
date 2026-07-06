@@ -76,7 +76,7 @@ export default function RootLayout({
     "@type": "Person",
     "name": "Chirag P Patil",
     "url": "https://cp099.github.io",
-    "image": "https://cp099.github.io/assets/portrait.jpg",
+    "image": "https://cp099.github.io/assets/portrait.webp",
     "jobTitle": "Systems Builder & Student",
     "address": {
       "@type": "PostalAddress",
@@ -92,8 +92,8 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="antialiased flex flex-col min-h-screen relative suppressHydrationWarning">
+    <html lang="en" className={inter.variable} suppressHydrationWarning>
+      <body className="antialiased flex flex-col min-h-screen relative">
         <script
           type="application/ld+json"
           id="json-ld-profile"
@@ -103,7 +103,7 @@ export default function RootLayout({
         <div className="bg-canvas">
           <div className="absolute -left-[10%] top-[-10%] w-[50%] h-[70%] rounded-full bg-cyan/5 blur-[120px] animate-float" />
           <div className="absolute -right-[10%] bottom-[-10%] w-[50%] h-[70%] rounded-full bg-blue-600/5 blur-[120px] animate-float [animation-delay:2s]" />
-          <div className="absolute inset-0 opacity-[0.03] mix-blend-overlay pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
+          <div className="absolute inset-0 opacity-[0.03] mix-blend-overlay pointer-events-none bg-[url('/assets/noise.svg')]" />
         </div>
 
         <Navigation />

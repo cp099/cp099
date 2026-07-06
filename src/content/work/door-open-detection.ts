@@ -68,7 +68,7 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/assets/Work/door-open-detection/disarmed-system.png',
+      src: '/assets/Work/door-open-detection/disarmed-system.webp',
       alt: 'Disarmed Door Detection System',
       caption:
         'Disarmed state — green LED active while monitoring systems remain inactive.'
@@ -76,7 +76,7 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/assets/Work/door-open-detection/armed-system.png',
+      src: '/assets/Work/door-open-detection/armed-system.webp',
       alt: 'Armed Door Detection System',
       caption:
         'Armed state — ultrasonic monitoring and alarm logic become active.'
@@ -144,7 +144,7 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/assets/Work/door-open-detection/schematic.png',
+      src: '/assets/Work/door-open-detection/schematic.webp',
       alt: 'Door Detection Schematic',
       caption:
         'System schematic showing ultrasonic sensing, LED indicators, manual controls, and alarm output.'

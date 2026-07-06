@@ -113,7 +113,7 @@ export const content: ContentItem = {
     // IMAGE
     {
       type: 'image',
-      src: '/assets/Work/eco-summit-registrations/desk-operations.jpg',
+      src: '/assets/Work/eco-summit-registrations/desk-operations.webp',
       alt: 'Eco Summit Registration Desk',
       caption: 'Managing live registration desk operations during peak delegate inflow'
     },
@@ -181,7 +181,7 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/assets/Work/eco-summit-registrations/with-dr-biswajit.jpg',
+      src: '/assets/Work/eco-summit-registrations/with-dr-biswajit.webp',
       alt: 'With Dr. Biswajit De',
       caption: 'During the Eco Summit – DPSBS Climate Conference 2025'
     },
@@ -226,7 +226,7 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/assets/Work/eco-summit-registrations/certificate.jpg',
+      src: '/assets/Work/eco-summit-registrations/certificate.webp',
       alt: 'Eco Summit Certificate',
       caption: 'Certificate of Participation — Eco Summit 2025 Organising Committee'
     }

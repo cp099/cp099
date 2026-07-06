@@ -58,13 +58,13 @@ export default async function ItemDetailPage({ params }: Props) {
     <article className="pb-20 animate-reveal">
       <header className="mb-8 border-b border-white/5 pb-8">
         <div className="flex items-center gap-2 text-cyan-bright font-mono text-[9px] mb-3 uppercase tracking-[0.4em] font-bold">
-          <span className="text-white/30">{item.category}</span>
+          <span className="text-white/70">{item.category}</span>
           <span className="text-white/10">/</span>
-          <span className="text-cyan/80 underline underline-offset-2 decoration-cyan/20">
+          <span className="text-cyan/85 underline underline-offset-2 decoration-cyan/20">
             {item.type}
           </span>
           <span className="text-white/10">/</span>
-          <span className="text-white/50">{item.date}</span>
+          <span className="text-white/75">{item.date}</span>
         </div>
         
         <h1 className="text-2xl md:text-3xl font-bold text-white tracking-tighter mb-3">
@@ -81,9 +81,9 @@ export default async function ItemDetailPage({ params }: Props) {
       {/* --- DEPENDENCIES BLOCK --- */}
       {item.dependencies && item.dependencies.length > 0 && (
         <div className="mt-16 pt-8 border-t border-white/5">
-          <h3 className="text-[10px] font-mono uppercase tracking-[0.3em] text-white/40 mb-4 flex items-center gap-3">
+          <h2 className="text-[10px] font-mono uppercase tracking-[0.3em] text-white/70 mb-4 flex items-center gap-3">
             System Dependencies <span className="h-px bg-white/10 flex-grow" />
-          </h3>
+          </h2>
           <div className="flex flex-wrap gap-3">
             {item.dependencies.map((dep) => (
               <span key={dep} className="px-3 py-1.5 bg-white/[0.02] border border-white/10 rounded-md text-[10px] font-mono text-cyan/80 uppercase tracking-widest shadow-sm">
@@ -96,18 +96,18 @@ export default async function ItemDetailPage({ params }: Props) {
 
       {/* --- CITATION FOOTER --- */}
       <footer className="mt-16 pt-8 border-t border-white/5">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-[9px] font-mono uppercase tracking-[0.2em] text-white/20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-[9px] font-mono uppercase tracking-[0.2em] text-white/60">
           <div>
-            <p className="mb-2 text-white/40">Reference UID</p>
+            <p className="mb-2 text-white/75">Reference UID</p>
             <p className="text-white/80 font-bold">{uid}</p>
           </div>
           <div>
-            <p className="mb-2 text-white/40">Data Integrity</p>
+            <p className="mb-2 text-white/75">Data Integrity</p>
             <p className="text-white/80">Verified Stable / {item.date}</p>
           </div>
           <div className="md:text-right">
-            <p className="mb-2 text-white/40">Citation Protocol</p>
-            <p className="truncate overflow-hidden mb-2 text-white/60">
+            <p className="mb-2 text-white/75">Citation Protocol</p>
+            <p className="truncate overflow-hidden mb-2 text-white/75">
               Harvard / APA / System
             </p>
             {/* The interactive Copy Button */}

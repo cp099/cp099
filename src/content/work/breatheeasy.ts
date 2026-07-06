@@ -14,7 +14,7 @@ export const content: ContentItem = {
     // LOGO (HERO VISUAL)
     {
       type: 'image',
-      src: '/assets/Work/BreatheEasy/logo_dark.png',
+      src: '/assets/Work/BreatheEasy/logo_dark.webp',
       alt: 'BreatheEasy Logo',
       caption: 'BreatheEasy — AQI Intelligence System'
     },
@@ -112,7 +112,7 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/assets/Work/BreatheEasy/dark_dashboard_screenshot.png',
+      src: '/assets/Work/BreatheEasy/dark_dashboard_screenshot.webp',
       alt: 'Main Dashboard',
       caption: 'Main dashboard showing AQI, forecasts, and pollutant insights.'
     },

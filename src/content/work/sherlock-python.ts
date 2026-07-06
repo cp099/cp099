@@ -102,13 +102,13 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/assets/Work/Sherlock-python/dashboard.png',
+      src: '/assets/Work/Sherlock-python/dashboard.webp',
       alt: 'Dashboard',
       caption: 'Command center dashboard providing real-time visibility into inventory and activity'
     },
     {
       type: 'image',
-      src: '/assets/Work/Sherlock-python/checkout-terminal.png',
+      src: '/assets/Work/Sherlock-python/checkout-terminal.webp',
       alt: 'Checkout Terminal',
       caption: 'Fast, kiosk-style interface designed for efficient lending operations'
     },
@@ -120,13 +120,13 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/assets/Work/Sherlock-python/item-detail.png',
+      src: '/assets/Work/Sherlock-python/item-detail.webp',
       alt: 'Item Detail',
       caption: 'Detailed item-level tracking with audit history and status visibility'
     },
     {
       type: 'image',
-      src: '/assets/Work/Sherlock-python/on-loan-report.png',
+      src: '/assets/Work/Sherlock-python/on-loan-report.webp',
       alt: 'Loan Report',
       caption: 'System-wide insights into active loans and overdue items'
     },

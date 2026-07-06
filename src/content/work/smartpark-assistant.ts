@@ -43,7 +43,7 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/assets/Work/smartpark-assistant/circuit-diagram.png',
+      src: '/assets/Work/smartpark-assistant/circuit-diagram.webp',
       alt: 'SmartPark Assistant Circuit Diagram',
       caption:
         'Physical circuit layout built using Arduino UNO, HC-SR04 ultrasonic sensor, LED indicators, and buzzer feedback.'
@@ -124,7 +124,7 @@ else if (distance < 30) {
 
     {
       type: 'image',
-      src: '/assets/Work/smartpark-assistant/schematic.png',
+      src: '/assets/Work/smartpark-assistant/schematic.webp',
       alt: 'SmartPark Assistant Schematic',
       caption:
         'System schematic showing sensor input, output devices, and Arduino interconnections.'

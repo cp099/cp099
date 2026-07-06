@@ -183,7 +183,7 @@ export const content: ContentItem = {
     },
     {
       type: 'image',
-      src: '/assets/Work/pledge-council/certificate.jpg',
+      src: '/assets/Work/pledge-council/certificate.webp',
       alt: 'PLEDGE Council Certificate',
       caption: 'Formal recognition for founding and contributing to the P.L.E.D.G.E. Council'
     }

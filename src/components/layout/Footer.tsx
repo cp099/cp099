@@ -7,13 +7,15 @@ export default function Footer() {
   const [time, setTime] = useState<string>("");
 
   useEffect(() => {
+    const formatter = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'Asia/Kolkata',
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true,
+    });
+
     const formatTime = () => {
-      setTime(new Intl.DateTimeFormat('en-US', {
-        timeZone: 'Asia/Kolkata',
-        hour: 'numeric',
-        minute: '2-digit',
-        hour12: true,
-      }).format(new Date()));
+      setTime(formatter.format(new Date()));
     };
 
     formatTime(); 
@@ -30,9 +32,9 @@ export default function Footer() {
       <div className="container mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-10 mb-16 md:mb-20">
           <div className="max-w-md text-left">
-            <h3 className="text-[10px] font-mono uppercase tracking-[0.3em] text-white/60 mb-4 font-bold">
+            <h2 className="text-[10px] font-mono uppercase tracking-[0.3em] text-white/80 mb-4 font-bold">
               Contact
-            </h3>
+            </h2>
             <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-6 font-light">
               Always open for curious conversations or technical discussions.
             </p>
@@ -44,9 +46,9 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="text-right hidden lg:block text-white/20 select-none">
+          <div className="text-right hidden lg:block text-white/40 select-none" aria-hidden="true">
             <p className="text-[10px] font-mono uppercase tracking-[0.3em] mb-2">System Authority</p>
-            <div className="text-4xl font-bold leading-none tracking-tighter">
+            <div className="text-4xl font-bold leading-none tracking-tighter text-white/30">
               CHIRAG.OS
             </div>
           </div>
@@ -78,7 +80,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex items-center gap-6 text-white/50 order-3 md:order-3 md:justify-end">
+          <div className="flex items-center gap-6 text-white/75 order-3 md:order-3 md:justify-end">
             <Link href="/" className="hover:text-white transition-colors tracking-[0.2em]">ROOT</Link>
             <button 
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

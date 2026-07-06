@@ -79,7 +79,7 @@ export const content: ContentItem = {
     // SCALE
     {
       type: 'image',
-      src: '/assets/Work/cauvery-vice-captain/5.jpg',
+      src: '/assets/Work/cauvery-vice-captain/5.webp',
       alt: 'Cauvery House Contingent',
       caption: 'The full contingent — students across grades trained for coordinated performance and participation'
     },
@@ -113,13 +113,13 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/assets/Work/cauvery-vice-captain/1.jpg',
+      src: '/assets/Work/cauvery-vice-captain/1.webp',
       alt: 'Trophy with teachers',
       caption: 'Receiving the trophy with faculty — outcome of structured training and coordination'
     },
     {
       type: 'image',
-      src: '/assets/Work/cauvery-vice-captain/2.jpg',
+      src: '/assets/Work/cauvery-vice-captain/2.webp',
       alt: 'With PT teachers',
       caption: 'Aligned execution across students, leadership, and physical training support'
     },
@@ -132,13 +132,13 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/assets/Work/cauvery-vice-captain/4.jpg',
+      src: '/assets/Work/cauvery-vice-captain/4.webp',
       alt: 'With captain holding trophy',
       caption: 'Execution under pressure — translating preparation into performance'
     },
     {
       type: 'image',
-      src: '/assets/Work/cauvery-vice-captain/3.jpg',
+      src: '/assets/Work/cauvery-vice-captain/3.webp',
       alt: 'With wardens and captain',
       caption: 'Coordination across students, faculty, and leadership layers'
     },

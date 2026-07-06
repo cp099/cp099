@@ -12,7 +12,7 @@ export const content: ContentItem = {
     // HERO VISUAL
     {
       type: 'image',
-      src: '/assets/Journey/first_day.jpg',
+      src: '/assets/Journey/first_day.webp',
       alt: 'First Day at DPS Bangalore South (Grade 1)',
       caption: 'First Day at DPS Bangalore South (Grade 1 — February 2014)',
       layout: 'portrait'
@@ -56,7 +56,7 @@ export const content: ContentItem = {
     // TINKERCAD PRESENTATION IMAGE
     {
       type: 'image',
-      src: '/assets/Journey/3d_team.jpg',
+      src: '/assets/Journey/3d_team.webp',
       alt: 'First TinkerCAD Living Room Model Presentation',
       caption: 'First TinkerCAD Living Room Model Presentation (Grade 6)',
       layout: 'landscape'
