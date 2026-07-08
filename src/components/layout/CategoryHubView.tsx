@@ -38,11 +38,11 @@ export default function CategoryHubView({ category }: CategoryHubViewProps) {
                 <h2 className="text-xl md:text-2xl font-bold text-white group-hover:text-cyan transition-colors capitalize">
                   {displayTitle === 'education' ? displayTitle : `${displayTitle}s`}
                 </h2>
-                <p className="text-[11px] md:text-sm text-slate/60 mt-1 font-medium">
+                <p className="text-[11px] md:text-sm text-slate/85 mt-1 font-medium">
                   {count === 0 ? "No entries found." : `Exploring ${count} entries.`}
                 </p>
               </div>
-              <div className="text-[9px] md:text-[10px] font-mono uppercase tracking-[0.2em] text-white/30 group-hover:text-cyan/60 transition-colors">
+              <div className="text-[9px] md:text-[10px] font-mono uppercase tracking-[0.2em] text-white/70 group-hover:text-cyan/85 transition-colors">
                 Directory / {displayTitle} {/* Uses formatted string */}
               </div>
             </Link>

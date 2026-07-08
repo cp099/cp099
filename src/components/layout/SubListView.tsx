@@ -23,7 +23,7 @@ export default function SubListView({ category, sub }: SubListViewProps) {
             {category}
           </Link>
           <span className="text-white/20">/</span>
-          <span className="text-white/60">{displayTitle === 'education' ? displayTitle : `${displayTitle}s`}</span>
+          <span className="text-white/80">{displayTitle === 'education' ? displayTitle : `${displayTitle}s`}</span>
         </div>
         <h1 className="text-3xl font-bold capitalize tracking-tighter text-white md:text-4xl">
           {displayTitle === 'education' ? displayTitle : `${displayTitle}s`}
@@ -33,7 +33,7 @@ export default function SubListView({ category, sub }: SubListViewProps) {
       <div className="grid gap-2 md:gap-3">
         {items.length === 0 ? (
           <div className="rounded-xl border border-dashed border-white/10 p-12 text-center">
-            <p className="font-mono text-sm italic uppercase tracking-widest text-slate opacity-40">
+            <p className="font-mono text-sm italic uppercase tracking-widest text-light-slate">
               System Status: Empty Directory
             </p>
           </div>
@@ -45,14 +45,14 @@ export default function SubListView({ category, sub }: SubListViewProps) {
               className="group flex flex-col justify-between rounded-lg border border-white/5 bg-white/[0.01] p-4 md:p-5 transition-all hover:border-white/20 hover:bg-white/[0.03] md:flex-row md:items-center"
             >
               <div className="flex-grow pr-4">
-                <h3 className="text-base md:text-lg font-medium text-white transition-colors group-hover:text-cyan leading-snug">
+                <h2 className="text-base md:text-lg font-medium text-white transition-colors group-hover:text-cyan leading-snug">
                   {item.title}
-                </h3>
-                <p className="mt-1 line-clamp-1 text-xs md:text-sm font-medium text-slate/60">
+                </h2>
+                <p className="mt-1 line-clamp-1 text-xs md:text-sm font-medium text-slate/85">
                   {item.summary}
                 </p>
               </div>
-              <span className="mt-3 font-mono text-[10px] md:text-[11px] uppercase italic text-white/40 md:mt-0 whitespace-nowrap">
+              <span className="mt-3 font-mono text-[10px] md:text-[11px] uppercase italic text-white/75 md:mt-0 whitespace-nowrap">
                 {item.date}
               </span>
             </Link>
