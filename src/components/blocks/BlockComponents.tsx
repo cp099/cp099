@@ -20,7 +20,7 @@ export const Heading = ({ block }: { block: HeadingBlock }) => {
 
 export const Paragraph = ({ block }: { block: ParagraphBlock }) => (
   <p 
-    className="text-sm leading-relaxed text-slate/90 mb-3 last:mb-0 transition-colors duration-500 hover:text-white" 
+    className="text-sm leading-relaxed text-light-slate mb-3 last:mb-0 transition-colors duration-500 hover:text-white" 
     dangerouslySetInnerHTML={{ __html: sanitizeHtml(block.content) }} 
   />
 );
@@ -38,7 +38,7 @@ export const List = ({ block }: { block: ListBlock }) => {
   return (
     <Tag className="mb-4 ml-1 space-y-1">
       {block.items.map((item, i) => (
-        <li key={i} className="flex items-start text-slate text-sm group">
+        <li key={i} className="flex items-start text-light-slate text-sm group">
           <span className="text-cyan/40 mr-2 select-none font-mono text-[10px] mt-0.5">
             {block.ordered ? `${i + 1}.` : '—'}
           </span>
@@ -49,7 +49,7 @@ export const List = ({ block }: { block: ListBlock }) => {
   );
 };
 
-export const ImageComponent = ({ block }: { block: ImageBlock }) => {
+export const ImageComponent = ({ block, priority = false }: { block: ImageBlock; priority?: boolean }) => {
   const isLogo = block.src.includes('logo');
   const layout = block.layout || 'portrait'; 
 
@@ -63,6 +63,7 @@ export const ImageComponent = ({ block }: { block: ImageBlock }) => {
             alt={block.alt}
             width={220}
             height={220}
+            priority={priority}
             className="opacity-90 object-contain"
           />
         </div>
@@ -73,6 +74,8 @@ export const ImageComponent = ({ block }: { block: ImageBlock }) => {
             alt={block.alt}
             width={1200}
             height={800}
+            priority={priority}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 800px"
             className={
               layout === 'landscape'
                 ? 'w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105'

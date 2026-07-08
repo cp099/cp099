@@ -14,6 +14,8 @@ interface BlockRendererProps {
 }
 
 export default function BlockRenderer({ blocks }: BlockRendererProps) {
+  const firstImageIndex = blocks.findIndex(b => b.type === 'image');
+
   return (
     <div className="max-w-5xl">
       {blocks.map((block, index) => {
@@ -27,7 +29,7 @@ export default function BlockRenderer({ blocks }: BlockRendererProps) {
           case 'list':
             return <List key={index} block={block} />;
           case 'image':
-            return <ImageComponent key={index} block={block} />;
+            return <ImageComponent key={index} block={block} priority={index === firstImageIndex} />;
           case 'code':
             return <CodeComponent key={index} block={block} />;
           case 'data':
