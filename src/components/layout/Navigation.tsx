@@ -41,7 +41,7 @@ export default function Navigation() {
           className="group flex items-center gap-2 font-mono text-[9px] md:text-[11px] tracking-widest transition-colors w-2/3 md:w-auto overflow-hidden"
         >
           <span className="font-bold text-cyan group-hover:text-cyan-bright whitespace-nowrap">CHIRAG.OS</span>
-          <span className="text-white/20">/</span>
+          <span className="text-white/20 select-none" aria-hidden="true">/</span>
           <span className="text-white/80 truncate">{getPathDisplay()}</span>
           <span className="text-cyan animate-pulse">_</span>
         </Link>

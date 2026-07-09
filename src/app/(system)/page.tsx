@@ -72,7 +72,7 @@ export default function HomePage() {
         <div className="lg:col-span-7">
           <header className="mb-10 md:mb-12">
             <h1 className="text-3xl md:text-5xl font-bold text-white tracking-tighter leading-[1.1] mb-3 transition-colors duration-500">
-              {humanMode ? 'Curious Observer' : 'Systems Builder'} • <span className="text-white/30">Tech & Finance</span>
+              {humanMode ? 'Curious Observer' : 'Systems Builder'} • <span className="text-white/70">Tech & Finance</span>
             </h1>
             
             <p className="text-[9px] md:text-[10px] font-mono uppercase tracking-[0.2em] md:tracking-[0.3em] text-white/80 mb-8 md:mb-10">

@@ -8,9 +8,9 @@ export default function NotFound() {
       <header className="mb-8 md:mb-10">
         <div className="flex items-center gap-3 text-cyan-bright font-mono text-[9px] md:text-[10px] mb-4 uppercase tracking-[0.3em] font-bold">
           <span className="text-white/70">System</span>
-          <span className="text-white/10">/</span>
+          <span className="text-white/10 select-none" aria-hidden="true">/</span>
           <span className="text-cyan underline underline-offset-4 decoration-cyan/30">Error</span>
-          <span className="text-white/10">/</span>
+          <span className="text-white/10 select-none" aria-hidden="true">/</span>
           <span className="text-white/80">404</span>
         </div>
         
@@ -29,19 +29,19 @@ export default function NotFound() {
         </div>
         <div className="p-5 grid grid-cols-2 gap-y-4 md:gap-y-6 gap-x-8 font-mono text-[9px] md:text-[10px]">
           <div>
-            <p className="text-white/60 mb-0.5 uppercase tracking-tighter">Error Type</p>
+            <p className="text-white/75 mb-0.5 uppercase tracking-tighter">Error Type</p>
             <p className="text-white/80">NOT_INITIALIZED</p>
           </div>
           <div>
-            <p className="text-white/60 mb-0.5 uppercase tracking-tighter">Protocol</p>
+            <p className="text-white/75 mb-0.5 uppercase tracking-tighter">Protocol</p>
             <p className="text-white/80">HTTP/STATIC</p>
           </div>
           <div>
-            <p className="text-white/60 mb-0.5 uppercase tracking-tighter">Status</p>
+            <p className="text-white/75 mb-0.5 uppercase tracking-tighter">Status</p>
             <p className="text-cyan font-bold">RECOVERY_REQUIRED</p>
           </div>
           <div>
-            <p className="text-white/60 mb-0.5 uppercase tracking-tighter">Authority</p>
+            <p className="text-white/75 mb-0.5 uppercase tracking-tighter">Authority</p>
             <p className="text-white/80 italic">CHIRAG.OS</p>
           </div>
         </div>

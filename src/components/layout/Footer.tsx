@@ -65,11 +65,11 @@ export default function Footer() {
                 <span className="h-1.5 w-1.5 rounded-full bg-cyan shadow-[0_0_8px_rgba(100,255,218,0.5)]" />
                 <span className="text-white/90 font-bold whitespace-nowrap text-[9px] md:text-[10px]">BANGALORE, IN</span>
               </div>
-              <span className="text-white/10">|</span>
+              <span className="text-white/20 select-none" aria-hidden="true">|</span>
               <span className="text-white font-bold tabular-nums min-w-[70px] text-center" suppressHydrationWarning>
                 {time || "LOADING..."}
               </span>
-              <span className="text-white/10">|</span>
+              <span className="text-white/20 select-none" aria-hidden="true">|</span>
               {/* TRIGGER: NOMINAL Button */}
               <button 
                 onClick={triggerTerminal}

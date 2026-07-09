@@ -22,7 +22,7 @@ export default function SubListView({ category, sub }: SubListViewProps) {
           <Link href={`/${category}`} className="transition-colors hover:text-cyan">
             {category}
           </Link>
-          <span className="text-white/20">/</span>
+          <span className="text-white/20 select-none" aria-hidden="true">/</span>
           <span className="text-white/80">{displayTitle === 'education' ? displayTitle : `${displayTitle}s`}</span>
         </div>
         <h1 className="text-3xl font-bold capitalize tracking-tighter text-white md:text-4xl">

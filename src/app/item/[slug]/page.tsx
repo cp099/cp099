@@ -59,11 +59,11 @@ export default async function ItemDetailPage({ params }: Props) {
       <header className="mb-8 border-b border-white/5 pb-8">
         <div className="flex items-center gap-2 text-cyan-bright font-mono text-[9px] mb-3 uppercase tracking-[0.4em] font-bold">
           <span className="text-white/70">{item.category}</span>
-          <span className="text-white/10">/</span>
+          <span className="text-white/10 select-none" aria-hidden="true">/</span>
           <span className="text-cyan/85 underline underline-offset-2 decoration-cyan/20">
             {item.type}
           </span>
-          <span className="text-white/10">/</span>
+          <span className="text-white/10 select-none" aria-hidden="true">/</span>
           <span className="text-white/75">{item.date}</span>
         </div>
         
@@ -96,7 +96,7 @@ export default async function ItemDetailPage({ params }: Props) {
 
       {/* --- CITATION FOOTER --- */}
       <footer className="mt-16 pt-8 border-t border-white/5">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-[9px] font-mono uppercase tracking-[0.2em] text-white/60">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-[9px] font-mono uppercase tracking-[0.2em] text-white/75">
           <div>
             <p className="mb-2 text-white/75">Reference UID</p>
             <p className="text-white/80 font-bold">{uid}</p>
